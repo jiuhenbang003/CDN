@@ -29,7 +29,7 @@ var stui = {
 	},
 	'mobile': {
 		'headroom': function() {
-			$.getScript("https://cdn.jsdelivr.net/gh/jiuhenbang003/CDN/headroom.min.js", function() {
+			$.getScript("https://cdn.jsdelivr.net/gh/jiuhenbang003/cdn@8787/headroom.min.js", function() {
 				$("#header-top", function() {
 					(new Headroom(document.querySelector("#header-top"), {
 						tolerance: 5,
@@ -44,7 +44,7 @@ var stui = {
 			})
 		},		
 		'slide': function() {
-			$.getScript("https://cdn.jsdelivr.net/gh/jiuhenbang003/CDN/flickity.pkgd.min.js", function() {
+			$.getScript("https://cdn.jsdelivr.net/gh/jiuhenbang003/cdn@8787/flickity.pkgd.min.js", function() {
 				$(".type-slide").each(function(a) {
 					$index = $(this).find(".active").index()*1;
 					if($index > 3){
@@ -75,7 +75,7 @@ var stui = {
 	},
 	'flickity': {
 		'carousel': function() {
-			$.getScript("https://cdn.jsdelivr.net/gh/jiuhenbang003/CDN/flickity.pkgd.min.js", function() {
+			$.getScript("https://cdn.jsdelivr.net/gh/jiuhenbang003/cdn@8787/flickity.pkgd.min.js", function() {
 				$(".carousel_center").flickity({
 				  	cellAlign: "center",
 				  	contain: true,
@@ -91,7 +91,7 @@ var stui = {
 	},	
 	'images': {
 		'lazyload': function() {
-			$.getScript("https://cdn.jsdelivr.net/gh/jiuhenbang003/CDN/jquery.lazyload.js", function() {
+			$.getScript("https://cdn.jsdelivr.net/gh/jiuhenbang003/cdn@8787/jquery.lazyload.js", function() {
 				$(".lazyload").lazyload({
 					effect: "fadeIn",
 					threshold: 300,
